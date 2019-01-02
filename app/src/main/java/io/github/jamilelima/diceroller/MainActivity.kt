@@ -1,12 +1,14 @@
 package io.github.jamilelima.diceroller
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.ImageView
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
         }
+
+        diceImage = findViewById(R.id.dice_image)
     }
 
     private fun rollDice() {
@@ -26,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             4 -> R.drawable.dice_4
             else -> R.drawable.dice_6
         }
-        val diceImage: ImageView = findViewById(R.id.dice_image)
         diceImage.setImageResource(drawableResource)
     }
 }
