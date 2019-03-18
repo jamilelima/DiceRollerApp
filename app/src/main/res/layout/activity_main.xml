@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:layout_gravity="center_vertical"
-  android:padding="10dp"
-  android:orientation="vertical"
-  tools:context=".MainActivity"
-  >
-
-  <ImageView
-    android:id="@+id/dice_image"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:contentDescription="@string/dice_image_description"
-    app:srcCompat="@drawable/dice_1"
-    />
-
-  <Button
-    android:id="@+id/roll_button"
-    android:textStyle="bold"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginLeft="36dp"
-    android:layout_marginRight="36dp"
-    android:layout_gravity="center"
-    android:background="@drawable/roll_button_shape"
-    android:backgroundTint="#90CD75"
-    android:fontFamily="@font/titillium_web_semibold"
-    android:text="@string/roll_button_text"
-    android:textColor="@android:color/white"
-    android:textSize="22sp"
-    />
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/diceIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/dice_image_description"
+        app:srcCompat="@drawable/dice_1" />
+
+    <Button
+        android:id="@+id/rollBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roll_button_shape"
+        android:backgroundTint="#90CD75"
+        android:fontFamily="@font/titillium_web_semibold"
+        android:text="@string/roll_button_text"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
